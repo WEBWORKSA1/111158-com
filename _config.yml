@@ -1,0 +1,25 @@
+# 111158.com — Jekyll config (GitHub Pages builds this natively; no plugins)
+title: "111158 — The Prosperity Code"
+tagline: "要要要要我发 · Lucky numbers, dates & growth tools for ambitious businesses"
+# While hosted at webworksa1.github.io/111158-com keep baseurl "/111158-com".
+# After pointing 111158.com DNS to GitHub Pages: set baseurl to "" and add a CNAME file containing 111158.com
+url: "https://webworksa1.github.io"
+baseurl: "/111158-com"
+canonical_host: "https://111158.com"
+interest_url: "https://web.works/contact"
+version: "20260929"
+
+# ---- Monetization (edit these; leave "" to disable) ----
+adsense_client: ""          # e.g. "ca-pub-1234567890123456" (also update ads.txt)
+youtube_channel: ""         # e.g. "https://www.youtube.com/@yourchannel"
+featured_videos: []         # YouTube video IDs, e.g. ["dQw4w9WgXcQ"]
+donate:
+  paypal: ""                # e.g. "https://paypal.me/yourname"
+  kofi: ""                  # e.g. "https://ko-fi.com/yourname"
+  buymeacoffee: ""          # e.g. "https://buymeacoffee.com/yourname"
+
+exclude:
+  - README.md
+  - RESEARCH.md
+  - BUILD-PROMPT.md
+  - LICENSE

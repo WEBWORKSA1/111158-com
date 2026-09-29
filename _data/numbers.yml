@@ -1,0 +1,49 @@
+# Number library: n, zh (reading), m (meaning), c (category), v (good|mid|bad)
+- {n: "0", zh: "零 líng", m: "Wholeness, zero, a fresh start", c: digit, v: mid}
+- {n: "1", zh: "一 yī / yāo", m: "要 want/will; being first", c: digit, v: good}
+- {n: "2", zh: "二 èr", m: "易 easy; good things come in pairs", c: digit, v: good}
+- {n: "3", zh: "三 sān", m: "生 life, growth", c: digit, v: good}
+- {n: "4", zh: "四 sì", m: "死 death, widely avoided", c: digit, v: bad}
+- {n: "5", zh: "五 wǔ", m: "我 I / 无 none; the Five Elements", c: digit, v: mid}
+- {n: "6", zh: "六 liù", m: "流 smooth flow; 六六大顺", c: digit, v: good}
+- {n: "7", zh: "七 qī", m: "起 rise / 气 anger; mixed", c: digit, v: mid}
+- {n: "8", zh: "八 bā", m: "发 prosper, the luckiest digit", c: digit, v: good}
+- {n: "9", zh: "九 jiǔ", m: "久 long-lasting; imperial number", c: digit, v: good}
+- {n: "18", zh: "要发", m: "Will prosper", c: wealth, v: good}
+- {n: "28", zh: "易发", m: "Easy prosperity (Cantonese)", c: wealth, v: good}
+- {n: "58", zh: "我发", m: "I prosper", c: wealth, v: good}
+- {n: "68", zh: "路发", m: "Road to wealth", c: wealth, v: good}
+- {n: "88", zh: "发发", m: "Double prosperity; also 'bye-bye' online", c: wealth, v: good}
+- {n: "98", zh: "久发", m: "Lasting prosperity", c: wealth, v: good}
+- {n: "158", zh: "要我发", m: "I will prosper", c: wealth, v: good}
+- {n: "168", zh: "一路发", m: "Prosper all the way", c: wealth, v: good}
+- {n: "518", zh: "我要发", m: "I want to prosper", c: wealth, v: good}
+- {n: "918", zh: "就要发", m: "About to prosper", c: wealth, v: good}
+- {n: "888", zh: "发发发", m: "Triple prosperity", c: wealth, v: good}
+- {n: "1688", zh: "一路发发", m: "Prosper all the way, twice", c: wealth, v: good}
+- {n: "5918", zh: "我就要发", m: "I'm about to get rich", c: wealth, v: good}
+- {n: "6868", zh: "路发路发", m: "Prosperity on every road", c: wealth, v: good}
+- {n: "8888", zh: "发发发发", m: "Ultimate prosperity", c: wealth, v: good}
+- {n: "111158", zh: "要要要要我发", m: "I am determined to prosper", c: wealth, v: good}
+- {n: "66", zh: "六六大顺", m: "Everything goes smoothly", c: luck, v: good}
+- {n: "666", zh: "溜溜溜", m: "'Awesome!' in online slang", c: luck, v: good}
+- {n: "99", zh: "久久", m: "Forever, long-lasting", c: luck, v: good}
+- {n: "999", zh: "久久久", m: "Eternal", c: luck, v: good}
+- {n: "520", zh: "我爱你", m: "I love you", c: love, v: good}
+- {n: "521", zh: "我愿意", m: "I'm willing / I do", c: love, v: good}
+- {n: "1314", zh: "一生一世", m: "For a lifetime", c: love, v: good}
+- {n: "5201314", zh: "我爱你一生一世", m: "I love you for a lifetime", c: love, v: good}
+- {n: "3344", zh: "生生世世", m: "Forever and ever", c: love, v: good}
+- {n: "530", zh: "我想你", m: "I miss you", c: love, v: good}
+- {n: "1111", zh: "光棍", m: "Singles; the 11.11 shopping festival", c: culture, v: mid}
+- {n: "38", zh: "三八", m: "Women's Day, but also a mild insult", c: culture, v: mid}
+- {n: "250", zh: "二百五", m: "Fool (insult)", c: avoid, v: bad}
+- {n: "14", zh: "要死", m: "Will die", c: avoid, v: bad}
+- {n: "74", zh: "气死", m: "Furious / angered to death", c: avoid, v: bad}
+- {n: "54", zh: "我死", m: "I die", c: avoid, v: bad}
+- {n: "514", zh: "我要死", m: "I will die", c: avoid, v: bad}
+- {n: "748", zh: "去死吧", m: "Go die", c: avoid, v: bad}
+- {n: "94", zh: "就死", m: "Then die", c: avoid, v: bad}
+- {n: "13", zh: "十三", m: "Neutral in China; unlucky in the West", c: culture, v: mid}
+- {n: "886", zh: "拜拜了", m: "Bye-bye (chat slang)", c: culture, v: mid}
+- {n: "995", zh: "救救我", m: "Help me (slang)", c: culture, v: mid}
