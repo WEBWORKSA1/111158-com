@@ -1,0 +1,60 @@
+---
+layout: default
+title: "Support 111158: Donate, Sponsor, Fuel Prosperity"
+description: "Support 111158 with a one-time or monthly contribution. Funds keep the tools free and pay for operations, promotions, marketing, hiring creators and contest prizes."
+---
+<div class="wrap crumbs" style="padding-top:12px"><a href="./">Home</a> › Support</div>
+<section class="page-hero"><div class="wrap center">
+  <span class="eyebrow">❤️ Community-funded</span>
+  <h1>Keep 111158 free & growing</h1>
+  <p class="lead" style="margin:0 auto">Every tool on 111158 is free. Your support pays for new features, bilingual content, contest prizes and the people who make it all.</p>
+</div></section>
+<section class="block" style="padding-top:20px"><div class="wrap">
+  <div class="grid g4">
+    <div class="card"><span class="ico">⚙️</span><h3>Operations</h3><p>Hosting, tools, data and upkeep.</p></div>
+    <div class="card"><span class="ico">📣</span><h3>Promotion & marketing</h3><p>Reaching more entrepreneurs worldwide.</p></div>
+    <div class="card"><span class="ico">🧑‍💻</span><h3>Hiring talent</h3><p>Writers, translators, video creators and developers.</p></div>
+    <div class="card"><span class="ico">🏆</span><h3>Contests & prizes</h3><p>Cash prizes and features for the community.</p></div>
+  </div>
+
+  <div class="section-head mt3"><h2>Choose your level</h2></div>
+  <div class="grid g3">
+    <div class="card tier"><h3>Supporter</h3><div class="price">$8</div><p>one-time · 发</p><ul class="ticks" style="text-align:left"><li>Name on the supporter wall</li><li>Our thanks, and good fortune</li></ul><a class="btn btn-ghost btn-block" href="#give" data-tier="Supporter $8">Give $8</a></div>
+    <div class="card tier feat"><span class="ribbon">Most popular</span><h3>Patron</h3><div class="price">$18<small style="font-size:1rem">/mo</small></div><p>monthly · 要发</p><ul class="ticks" style="text-align:left"><li>Everything in Supporter</li><li>Early access to new tools</li><li>Patron-only monthly lucky-date calendar</li></ul><a class="btn btn-primary btn-block" href="#give" data-tier="Patron $18/mo">Become a Patron</a></div>
+    <div class="card tier"><h3>Founding Sponsor</h3><div class="price">$888</div><p>one-time · 发发发</p><ul class="ticks" style="text-align:left"><li>Logo and link on the Sponsors wall</li><li>Named prize in a contest</li><li>A feature in the newsletter</li></ul><a class="btn btn-gold btn-block" href="#give" data-tier="Founding Sponsor $888">Sponsor</a></div>
+  </div>
+
+  <div class="two-col mt3" id="give">
+    <div class="tool">
+      <h2 class="mt0" style="font-size:1.4rem">Give now</h2>
+      {% if site.donate.paypal != "" or site.donate.kofi != "" or site.donate.buymeacoffee != "" %}
+      <p>Pay securely with your preferred platform:</p>
+      <div class="chips" style="gap:12px">
+        {% if site.donate.paypal != "" %}<a class="btn btn-primary" href="{{ site.donate.paypal }}" target="_blank" rel="noopener">PayPal</a>{% endif %}
+        {% if site.donate.kofi != "" %}<a class="btn btn-ghost" href="{{ site.donate.kofi }}" target="_blank" rel="noopener">☕ Ko-fi</a>{% endif %}
+        {% if site.donate.buymeacoffee != "" %}<a class="btn btn-gold" href="{{ site.donate.buymeacoffee }}" target="_blank" rel="noopener">Buy Me a Coffee</a>{% endif %}
+      </div>
+      <hr style="border:0;border-top:1px solid var(--line);margin:20px 0">
+      {% endif %}
+      <p><b>Pledge form:</b> tell us how you'd like to support (donation, sponsorship, in-kind, prize funding), and we'll send secure payment details and a receipt.</p>
+      <form data-form="donation-pledge" data-success="Thank you for your generosity! 🧧 We'll email secure payment details and a receipt within 1 business day.">
+        <div class="row2">
+          <div class="field"><label for="d-t">Support type</label><select id="d-t" name="type"><option>One-time donation</option><option>Monthly patron</option><option>Founding sponsor</option><option>Fund a contest prize</option><option>In-kind (services, tools, media)</option><option>Corporate sponsorship</option></select></div>
+          <div class="field"><label for="d-a">Amount (USD)</label><select id="d-a" name="amount"><option>$8</option><option>$18</option><option>$58</option><option>$88</option><option>$168</option><option>$518</option><option>$888</option><option>Other</option></select></div>
+        </div>
+        <div class="row2">
+          <div class="field"><label for="d-n">Name (or "Anonymous")</label><input id="d-n" name="name" required autocomplete="name"></div>
+          <div class="field"><label for="d-e">Email</label><input id="d-e" name="email" type="email" required autocomplete="email"></div>
+        </div>
+        <div class="field"><label for="d-m">Message for the supporter wall (optional)</label><input id="d-m" name="message" maxlength="140"></div>
+        <label class="check"><input type="checkbox" name="public" value="yes" checked> Show my name on the supporter wall</label>
+        <button class="btn btn-primary btn-block mt2" type="submit">Pledge my support ❤️</button>
+      </form>
+    </div>
+    <aside class="sidebar">
+      <div class="card"><h3 class="mt0">🧧 Supporter wall</h3><p class="muted">Be among the first names here. Founding supporters are featured permanently.</p><p>🥇 <i>Your name here</i></p><p>🥈 <i>Your name here</i></p><p>🥉 <i>Your name here</i></p></div>
+      <div class="card"><h3 class="mt0">Transparency</h3><p class="muted small">Contributions support an independent website and are <b>not tax-deductible</b> charitable donations. We publish a yearly summary of how funds were used.</p></div>
+    </aside>
+  </div>
+</div></section>
+<script>document.addEventListener('click',function(e){var t=e.target.closest('[data-tier]');if(!t)return;var s=document.getElementById('d-t'),a=document.getElementById('d-a'),v=t.getAttribute('data-tier');if(/Patron/.test(v)){s.value='Monthly patron';a.value='$18'}else if(/888/.test(v)){s.value='Founding sponsor';a.value='$888'}else{s.value='One-time donation';a.value='$8'}});</script>
