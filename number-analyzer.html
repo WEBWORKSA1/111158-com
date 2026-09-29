@@ -1,0 +1,65 @@
+---
+layout: default
+title: "Prosperity Number Analyzer: How Lucky Is Your Number?"
+description: "Free Chinese lucky number analyzer. Score any phone number, license plate, price, address or domain for prosperity: digit homophones, 40+ famous combos and a 0–100 score."
+app: true
+faq:
+  - q: "How is the prosperity score calculated?"
+    a: "Each digit carries a traditional value (8 prosper, 6 flow, 9 lasting, 4 avoided). Well-known combinations such as 168, 158, 518 and 1314 add or subtract points, and endings in 8 and repeating runs earn bonuses."
+  - q: "Why is 4 unlucky?"
+    a: "In Mandarin and Cantonese, 4 (sì) sounds like the word for death (死), so it is widely avoided in phone numbers, floors and prices."
+  - q: "Is a high score a guarantee of success?"
+    a: "No. It measures cultural perception. Many customers do value lucky numbers, which is why businesses use them in pricing and branding."
+---
+<div class="wrap crumbs" style="padding-top:12px"><a href="./">Home</a> › Tools › Number Analyzer</div>
+<section class="page-hero"><div class="wrap">
+  <span class="eyebrow">Free tool · no sign-up</span>
+  <h1>Prosperity Number Analyzer</h1>
+  <p class="lead">Enter any phone number, license plate, price, house number or numeric domain. You get a digit-by-digit reading, the famous combinations it contains, and a prosperity score.</p>
+</div></section>
+<section class="block" style="padding-top:20px"><div class="wrap two-col">
+  <div>
+    <div class="tool">
+      <form id="analyzerForm" class="big-input">
+        <label class="sr" for="numInput">Number to analyze</label>
+        <input id="numInput" inputmode="numeric" placeholder="Type any number…" maxlength="30" autofocus>
+        <button class="btn btn-primary" type="submit">Analyze</button>
+      </form>
+      <div class="chips mt2" aria-label="Examples"><button class="chip" data-try="111158">111158</button><button class="chip" data-try="8888">8888</button><button class="chip" data-try="13800168518">13800168518</button><button class="chip" data-try="5201314">5201314</button><button class="chip" data-try="1414">1414</button><button class="chip" data-try="666">666</button></div>
+      <div id="analyzerOut" class="result" aria-live="polite"></div>
+      <form id="reportForm" hidden data-form="analyzer-report" data-success="Your full report request is in. We'll email your detailed reading and 3 better alternatives within 1–2 business days." class="mt3" style="border-top:1px solid var(--line);padding-top:18px">
+        <h3 class="mt0">📩 Email me the full report + 3 luckier alternatives</h3>
+        <input type="hidden" name="number">
+        <div class="row2"><div class="field"><label for="rf-n">First name</label><input id="rf-n" name="name" required autocomplete="given-name"></div><div class="field"><label for="rf-e">Email</label><input id="rf-e" name="email" type="email" required autocomplete="email"></div></div>
+        <div class="field"><label for="rf-u">What is the number for?</label><select id="rf-u" name="use"><option>Business phone line</option><option>Personal mobile</option><option>License plate</option><option>Product price</option><option>Address / unit</option><option>Domain / brand</option><option>Other</option></select></div>
+        <label class="check"><input type="checkbox" name="newsletter" value="yes" checked> Also send me the weekly Prosperity Code</label>
+        <button class="btn btn-primary btn-block mt2" type="submit">Send my free report</button>
+      </form>
+      <p class="disclaimer">For cultural reference and entertainment. Not financial, legal or lottery advice.</p>
+    </div>
+    {% include ad.html %}
+    <article class="prose">
+      <h2>How the analyzer reads a number</h2>
+      <p>Chinese number symbolism rests on <b>homophones</b>, digits that sound like other words. 8 (<i>bā</i>) sounds like 发 (<i>fā</i>, prosper), 6 like 流 (flow), 9 like 久 (lasting), and 4 like 死 (death). Combinations become phrases: <b>168</b> is 一路发 ("prosper all the way"), <b>518</b> is 我要发 ("I will prosper") and <b>1314</b> is 一生一世 ("a lifetime").</p>
+      <div class="table-wrap"><table>
+        <tr><th>Digit</th><th>Pinyin</th><th>Sounds like</th><th>Signal</th></tr>
+        <tr><td>0</td><td>líng</td><td>灵 / 圆 (whole)</td><td>Neutral–positive</td></tr>
+        <tr><td>1</td><td>yī / yāo</td><td>要 (want)</td><td>Positive</td></tr>
+        <tr><td>2</td><td>èr</td><td>易, 双 (easy, pair)</td><td>Positive</td></tr>
+        <tr><td>3</td><td>sān</td><td>生 (life)</td><td>Positive</td></tr>
+        <tr><td>4</td><td>sì</td><td>死 (death)</td><td>Avoid</td></tr>
+        <tr><td>5</td><td>wǔ</td><td>我 / 无 (I / none)</td><td>Context</td></tr>
+        <tr><td>6</td><td>liù</td><td>流 / 顺 (smooth)</td><td>Very positive</td></tr>
+        <tr><td>7</td><td>qī</td><td>起 / 气 (rise / anger)</td><td>Mixed</td></tr>
+        <tr><td>8</td><td>bā</td><td>发 (prosper)</td><td>Most positive</td></tr>
+        <tr><td>9</td><td>jiǔ</td><td>久 (lasting)</td><td>Very positive</td></tr>
+      </table></div>
+      <h2>FAQ</h2>
+      <details><summary>How is the prosperity score calculated?</summary><p>Each digit carries a traditional value (8 prosper, 6 flow, 9 lasting, 4 avoided). Well-known combinations add or subtract points, and endings in 8 and repeating runs earn bonuses.</p></details>
+      <details><summary>Why is 4 unlucky?</summary><p>4 (sì) sounds like 死 (death) in Mandarin and Cantonese, so it is widely avoided in phone numbers, floors and prices. In Teochew culture, 4 can be viewed positively.</p></details>
+      <details><summary>Is a high score a guarantee of success?</summary><p>No. It measures cultural perception. Many customers do value lucky numbers, which is why businesses use them in pricing and branding.</p></details>
+    </article>
+  </div>
+  <aside class="sidebar">{% include sidebar.html %}</aside>
+</div></section>
+{% include related.html %}
