@@ -1,0 +1,27 @@
+---
+layout: default
+title: "Videos: Lucky Numbers, Chinese New Year & Festival Marketing"
+description: "Watch short videos on Chinese lucky numbers, Chinese New Year customs, feng shui for business and festival marketing."
+---
+<div class="wrap crumbs" style="padding-top:12px"><a href="./">Home</a> › Videos</div>
+<section class="page-hero"><div class="wrap"><span class="eyebrow">Watch</span><h1>111158 Video Hub</h1><p class="lead">Short, useful videos on prosperity numbers, festivals and marketing to Chinese audiences.</p>
+{% if site.youtube_channel != "" %}<a class="btn btn-primary" href="{{ site.youtube_channel }}?sub_confirmation=1" target="_blank" rel="noopener">▶ Subscribe on YouTube</a>{% endif %}
+</div></section>
+<section class="block" style="padding-top:20px"><div class="wrap">
+  {% if site.featured_videos.size > 0 %}
+  <h2>Featured</h2>
+  <div class="grid g3">{% for v in site.featured_videos %}<div class="video" data-id="{{ v }}" role="button" aria-label="Play video"></div>{% endfor %}</div>
+  {% include ad.html %}
+  {% endif %}
+  <h2>Explore by topic</h2>
+  <div class="grid g3">
+    <a class="card" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=chinese+lucky+numbers+meaning"><span class="ico">🔢</span><h3>Chinese lucky numbers explained</h3><p>Why 8 is lucky and 4 is avoided.</p></a>
+    <a class="card" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=chinese+new+year+traditions+explained"><span class="ico">🧧</span><h3>Chinese New Year traditions</h3><p>Customs, foods and taboos.</p></a>
+    <a class="card" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=singles+day+11.11+marketing+strategy"><span class="ico">🛒</span><h3>11.11 marketing strategy</h3><p>How brands win the biggest sale day.</p></a>
+    <a class="card" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=feng+shui+for+business+office+wealth"><span class="ico">🏮</span><h3>Feng shui for business</h3><p>Wealth corners and office layouts.</p></a>
+    <a class="card" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=chinese+zodiac+explained"><span class="ico">🐉</span><h3>The Chinese zodiac</h3><p>The 12 animals and 5 elements.</p></a>
+    <a class="card" target="_blank" rel="noopener" href="https://www.youtube.com/results?search_query=learn+chinese+numbers+pronunciation"><span class="ico">🗣️</span><h3>Say numbers in Mandarin</h3><p>Pronunciation from 0 to 10,000.</p></a>
+  </div>
+  {% include ad.html %}
+  <div class="cta-band"><div><h2>Create videos with us</h2><p>We hire video editors, bilingual hosts and short-form creators. We also sponsor creator collaborations.</p></div><a class="btn btn-gold btn-lg" href="careers.html">Join as a creator →</a></div>
+</div></section>
