@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{% if page.title %}{{ page.title }} · 111158{% else %}{{ site.title }}{% endif %}</title>
+<meta name="description" content="{{ page.description | default: site.tagline | escape }}">
+<link rel="canonical" href="{{ site.canonical_host }}{{ page.url | replace: 'index.html','' }}">
+<meta name="theme-color" content="#C8102E">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="111158">
+<meta property="og:title" content="{{ page.title | default: site.title | escape }}">
+<meta property="og:description" content="{{ page.description | default: site.tagline | escape }}">
+<meta property="og:url" content="{{ site.canonical_host }}{{ page.url }}">
+<meta property="og:image" content="{{ site.canonical_host }}/assets/img/og.svg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="{{ '/assets/img/favicon.svg' | relative_url }}" type="image/svg+xml">
+<link rel="manifest" href="{{ '/manifest.webmanifest' | relative_url }}">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Noto+Serif+SC:wght@600;900&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="{{ '/assets/css/style.css' | relative_url }}?v={{ site.version }}">
+<script>try{var t=localStorage.getItem('theme');if(t)document.documentElement.setAttribute('data-theme',t)}catch(e){}</script>
+{% if site.adsense_client != "" %}<meta name="adsense-client" content="{{ site.adsense_client }}">{% endif %}
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","name":"111158","url":"{{ site.canonical_host }}/","logo":"{{ site.canonical_host }}/assets/img/favicon.svg"},{"@type":"WebSite","name":"111158 — The Prosperity Code","url":"{{ site.canonical_host }}/","potentialAction":{"@type":"SearchAction","target":"{{ site.canonical_host }}/number-analyzer.html?n={n}","query-input":"required name=n"}}{% if page.faq %},{"@type":"FAQPage","mainEntity":[{% for q in page.faq %}{"@type":"Question","name":{{ q.q | jsonify }},"acceptedAnswer":{"@type":"Answer","text":{{ q.a | jsonify }}}}{% unless forloop.last %},{% endunless %}{% endfor %}]}{% endif %}{% if page.app %},{"@type":"WebApplication","name":{{ page.title | default: site.title | jsonify }},"applicationCategory":"UtilitiesApplication","operatingSystem":"Any","offers":{"@type":"Offer","price":"0","priceCurrency":"USD"}}{% endif %}]}</script>
+</head>
+<body class="{{ page.body_class }}">
+<a class="skip" href="#main">Skip to content</a>
+
+<div class="interest-bar" role="complementary">
+  <div class="wrap">
+    <a href="{{ site.interest_url }}" target="_blank" rel="noopener" data-interest>
+      <span class="pulse" aria-hidden="true"></span>
+      <span><strong>Contact</strong>, if you are interested in this website / domain name / Sponsorship / Advertisement / Partnership <span aria-hidden="true">→</span></span>
+    </a>
+  </div>
+</div>
+
+<header class="site-header">
+  <div class="wrap nav-row">
+    <a class="brand" href="{{ '/' | relative_url }}" aria-label="111158 home">
+      <span class="brand-seal" aria-hidden="true">发</span>
+      <span class="brand-text"><b>111158</b><small>The Prosperity Code</small></span>
+    </a>
+    <nav class="main-nav" aria-label="Main">
+      <div class="nav-item has-menu">
+        <button class="nav-link" aria-expanded="false">Tools</button>
+        <div class="menu">
+          <a href="{{ '/number-analyzer.html' | relative_url }}"><b>Prosperity Number Analyzer</b><span>Score any phone, plate, price or domain</span></a>
+          <a href="{{ '/lucky-price-calculator.html' | relative_url }}"><b>Lucky Price Calculator</b><span>Find prosperity price points</span></a>
+          <a href="{{ '/launch-date-picker.html' | relative_url }}"><b>Launch Date Picker</b><span>Best dates to open, sign or launch</span></a>
+          <a href="{{ '/zodiac-lucky-numbers.html' | relative_url }}"><b>Zodiac Lucky Numbers</b><span>Your animal, element, numbers & colours</span></a>
+          <a href="{{ '/red-envelope-calculator.html' | relative_url }}"><b>Red Envelope Calculator</b><span>How much to give, the lucky way</span></a>
+          <a href="{{ '/festival-calendar.html' | relative_url }}"><b>Festival Countdown Calendar</b><span>CNY, 618, 11.11, 12.12 & more</span></a>
+        </div>
+      </div>
+      <div class="nav-item has-menu">
+        <button class="nav-link" aria-expanded="false">Learn</button>
+        <div class="menu">
+          <a href="{{ '/meaning-of-111158.html' | relative_url }}"><b>Meaning of 111158</b><span>要要要要我发 decoded</span></a>
+          <a href="{{ '/number-meanings.html' | relative_url }}"><b>Number Meanings Library</b><span>0–9 and 40+ combinations</span></a>
+          <a href="{{ '/lucky-numbers-for-business.html' | relative_url }}"><b>Lucky Numbers for Business</b><span>Pricing, naming, phones, plates</span></a>
+          <a href="{{ '/chinese-new-year.html' | relative_url }}"><b>Chinese New Year Hub</b><span>Dates, customs, greetings</span></a>
+          <a href="{{ '/guides.html' | relative_url }}"><b>All Guides</b><span>Playbooks and deep dives</span></a>
+        </div>
+      </div>
+      <a class="nav-link" href="{{ '/videos.html' | relative_url }}">Videos</a>
+      <div class="nav-item has-menu">
+        <button class="nav-link" aria-expanded="false">Community</button>
+        <div class="menu">
+          <a href="{{ '/contests.html' | relative_url }}"><b>Prosperity Challenge</b><span>Contests & prizes</span></a>
+          <a href="{{ '/support.html' | relative_url }}"><b>Support 111158</b><span>Donate & become a sponsor</span></a>
+          <a href="{{ '/careers.html' | relative_url }}"><b>Careers & Talent</b><span>Join the team</span></a>
+          <a href="{{ '/advertise.html' | relative_url }}"><b>Advertise</b><span>Sponsorships & placements</span></a>
+        </div>
+      </div>
+      <a class="btn btn-gold nav-cta" href="{{ '/growth-consultation.html' | relative_url }}">Free Growth Consult</a>
+    </nav>
+    <div class="nav-tools">
+      <button class="icon-btn" id="themeToggle" aria-label="Toggle dark mode">🌙</button>
+      <button class="icon-btn menu-toggle" id="menuToggle" aria-label="Open menu" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="main">
+{{ content }}
+</main>
+
+<section class="newsletter">
+  <div class="wrap nl-grid">
+    <div>
+      <h2>Get your weekly <span class="gold">Prosperity Code</span></h2>
+      <p>Lucky dates for the week ahead, festival marketing deadlines, and new tools. One email a week. Unsubscribe anytime.</p>
+    </div>
+    <form data-form="newsletter" data-success="You're in! Watch your inbox for this week's Prosperity Code." class="nl-form">
+      <label class="sr" for="nl-e">Email</label>
+      <input id="nl-e" type="email" name="email" placeholder="you@business.com" required autocomplete="email">
+      <select name="interest" aria-label="Interest"><option>Everything</option><option>Business & marketing</option><option>Lucky numbers & dates</option><option>Chinese New Year & festivals</option></select>
+      <button class="btn btn-primary" type="submit">Subscribe</button>
+    </form>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="wrap foot-grid">
+    <div>
+      <a class="brand" href="{{ '/' | relative_url }}"><span class="brand-seal" aria-hidden="true">发</span><span class="brand-text"><b>111158</b><small>The Prosperity Code</small></span></a>
+      <p class="muted">Prosperity numbers, lucky dates and growth tools for entrepreneurs, sellers and marketers. Cultural reference and entertainment, not financial advice.</p>
+      <p><a href="#" data-mail="Inquiry from 111158.com">✉️ Email us</a> · <a href="{{ site.interest_url }}" target="_blank" rel="noopener">Buy / partner on this domain</a></p>
+    </div>
+    <div><h3>Tools</h3>
+      <a href="{{ '/number-analyzer.html' | relative_url }}">Number Analyzer</a>
+      <a href="{{ '/lucky-price-calculator.html' | relative_url }}">Lucky Price Calculator</a>
+      <a href="{{ '/launch-date-picker.html' | relative_url }}">Launch Date Picker</a>
+      <a href="{{ '/zodiac-lucky-numbers.html' | relative_url }}">Zodiac Lucky Numbers</a>
+      <a href="{{ '/red-envelope-calculator.html' | relative_url }}">Red Envelope Calculator</a>
+      <a href="{{ '/festival-calendar.html' | relative_url }}">Festival Calendar</a>
+    </div>
+    <div><h3>Learn</h3>
+      <a href="{{ '/meaning-of-111158.html' | relative_url }}">Meaning of 111158</a>
+      <a href="{{ '/number-meanings.html' | relative_url }}">Number Meanings</a>
+      <a href="{{ '/lucky-numbers-for-business.html' | relative_url }}">For Business</a>
+      <a href="{{ '/chinese-new-year.html' | relative_url }}">Chinese New Year</a>
+      <a href="{{ '/guides.html' | relative_url }}">Guides</a>
+      <a href="{{ '/videos.html' | relative_url }}">Videos</a>
+    </div>
+    <div><h3>Company</h3>
+      <a href="{{ '/growth-consultation.html' | relative_url }}">Growth Consultation</a>
+      <a href="{{ '/advertise.html' | relative_url }}">Advertise</a>
+      <a href="{{ '/support.html' | relative_url }}">Support / Donate</a>
+      <a href="{{ '/contests.html' | relative_url }}">Contests</a>
+      <a href="{{ '/careers.html' | relative_url }}">Careers</a>
+      <a href="{{ '/about.html' | relative_url }}">About</a>
+      <a href="{{ '/contact.html' | relative_url }}">Contact</a>
+      <a href="{{ '/faq.html' | relative_url }}">FAQ</a>
+    </div>
+  </div>
+  <div class="wrap legal-row">
+    <p>© <span data-year>2026</span> 111158.com. Original content; all rights reserved. <a href="{{ '/legal.html' | relative_url }}">Trademark & copyright disclosure</a> · <a href="{{ '/privacy.html' | relative_url }}">Privacy</a> · <a href="{{ '/terms.html' | relative_url }}">Terms</a></p>
+    <p class="muted small">"111158" is used as a descriptive numeric string. This site is independent and not affiliated with, endorsed by or sponsored by any company, platform or trademark owner mentioned. Third-party names are the property of their respective owners.</p>
+  </div>
+</footer>
+
+<div class="consent" id="consent" hidden>
+  <p>We use cookies for analytics and ads (including Google AdSense) to keep 111158 free. <a href="{{ '/privacy.html' | relative_url }}">Learn more</a></p>
+  <div><button class="btn btn-ghost" data-consent="essential">Essential only</button> <button class="btn btn-primary" data-consent="all">Accept all</button></div>
+</div>
+
+<aside class="slidein" id="slidein" hidden aria-label="Offer">
+  <button class="close" aria-label="Close">×</button>
+  <b>Launching or selling to Chinese customers?</b>
+  <p>Get a free 15-minute Prosperity Growth plan: lucky pricing, launch date & festival campaign ideas.</p>
+  <a class="btn btn-primary btn-block" href="{{ '/growth-consultation.html' | relative_url }}">Claim my free plan</a>
+</aside>
+<div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+<script src="{{ '/assets/js/main.js' | relative_url }}?v={{ site.version }}" defer></script>
+</body>
+</html>
