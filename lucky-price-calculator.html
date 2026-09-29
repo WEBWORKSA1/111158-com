@@ -1,0 +1,42 @@
+---
+layout: default
+title: "Lucky Price Calculator: Prosperity Pricing"
+description: "Turn any price into a prosperity price point. Find the nearest lucky prices (…8, 88, 168, 518, 888) above and below yours, with the % change and a score."
+app: true
+---
+<div class="wrap crumbs" style="padding-top:12px"><a href="./">Home</a> › Tools › Lucky Price Calculator</div>
+<section class="page-hero"><div class="wrap">
+  <span class="eyebrow">Free tool for sellers</span>
+  <h1>Lucky Price Calculator</h1>
+  <p class="lead">In Chinese retail, ¥58, ¥88, ¥168 and ¥518 do the job .99 does in the West. Enter your price to find the best prosperity price points nearby.</p>
+</div></section>
+<section class="block" style="padding-top:20px"><div class="wrap two-col">
+  <div>
+    <div class="tool">
+      <form id="priceForm">
+        <div class="row3">
+          <div class="field" style="grid-column:span 2"><label for="priceIn">Your current price</label><input id="priceIn" type="number" min="1" step="0.01" placeholder="e.g. 149" required></div>
+          <div class="field"><label for="priceCur">Currency</label><select id="priceCur"><option value="$">$ USD</option><option value="¥">¥ CNY</option><option value="C$">C$ CAD</option><option value="HK$">HK$ HKD</option><option value="S$">S$ SGD</option><option value="RM">RM MYR</option><option value="€">€ EUR</option><option value="£">£ GBP</option><option value="₹">₹ INR</option></select></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Find lucky prices</button>
+      </form>
+      <div id="priceOut" class="result" aria-live="polite"></div>
+      <p class="disclaimer">Price points containing 4 are excluded. Test with A/B experiments before rolling out store-wide.</p>
+    </div>
+    {% include ad.html %}
+    <article class="prose">
+      <h2>Why lucky prices work</h2>
+      <p>Prices ending in <b>8</b> carry the sound of <span class="zh">发</span> (prosper). <b>88</b> doubles it, <b>168</b> reads "prosper all the way" and <b>518</b> reads "I will prosper". For Chinese-speaking shoppers, these endings signal a considerate, auspicious offer. That's why restaurant set menus, gift boxes and festival bundles cluster at ¥58, ¥88, ¥128, ¥168 and ¥288.</p>
+      <h2>Rules of thumb</h2>
+      <ul class="ticks">
+        <li>Never end on 4 (sounds like "death"), and avoid 14, 74 and 514 inside a price.</li>
+        <li>For gifting products (CNY, Mid-Autumn, weddings), choose even, 8-heavy prices.</li>
+        <li>For bundles, try ¥168 / $168 anchors. They read well in any currency.</li>
+        <li>Pair a lucky price with a lucky launch date for festival campaigns.</li>
+      </ul>
+      <p><a class="btn btn-primary" href="growth-consultation.html?service=pricing">Get a full pricing review for your store</a></p>
+    </article>
+  </div>
+  <aside class="sidebar">{% include sidebar.html %}</aside>
+</div></section>
+{% include related.html %}

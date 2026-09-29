@@ -1,0 +1,44 @@
+---
+layout: default
+title: "Red Envelope (Hongbao) Amount Calculator"
+description: "How much to put in a red envelope for Chinese New Year, weddings, birthdays, babies and business openings. Lucky amounts in 10 currencies, with etiquette."
+app: true
+---
+<div class="wrap crumbs" style="padding-top:12px"><a href="./">Home</a> › Tools › Red Envelope Calculator</div>
+<section class="page-hero"><div class="wrap">
+  <span class="eyebrow">Free tool</span>
+  <h1>Red Envelope Calculator <span class="zh">红包</span></h1>
+  <p class="lead">Choose the occasion and your currency to get a typical range and the luckiest amounts inside it.</p>
+</div></section>
+<section class="block" style="padding-top:20px"><div class="wrap two-col">
+  <div>
+    <div class="tool">
+      <form id="hbForm">
+        <div class="row2">
+          <div class="field"><label for="hbOcc">Occasion & relationship</label><select id="hbOcc">
+            <optgroup label="Chinese New Year"><option value="cny_child">Child (family friend)</option><option value="cny_relative">Niece / nephew / relative</option><option value="cny_employee">Employee bonus</option><option value="cny_parent">Parents / grandparents</option></optgroup>
+            <optgroup label="Weddings"><option value="wed_friend">Friend's wedding</option><option value="wed_colleague">Colleague's wedding</option><option value="wed_family">Close family wedding</option></optgroup>
+            <optgroup label="Other"><option value="birthday">Birthday</option><option value="baby">Baby's full month (满月)</option><option value="graduation">Graduation</option><option value="opening">Business grand opening</option></optgroup>
+          </select></div>
+          <div class="field"><label for="hbCur">Currency</label><select id="hbCur"><option>USD</option><option>CAD</option><option>CNY</option><option>HKD</option><option>SGD</option><option>MYR</option><option>AUD</option><option>GBP</option><option>EUR</option><option>INR</option></select></div>
+        </div>
+        <button class="btn btn-primary btn-block" type="submit">Suggest amounts</button>
+      </form>
+      <div id="hbOut" class="result" aria-live="polite"></div>
+      <p class="disclaimer">Ranges are general guidance and vary by region, family and closeness. Currency conversions are approximate.</p>
+    </div>
+    {% include ad.html %}
+    <article class="prose">
+      <h2>Red envelope etiquette in 60 seconds</h2>
+      <ul class="ticks">
+        <li>Use new, crisp notes. Coins and mixed bills look careless.</li>
+        <li>Avoid 4 in any form (40, 400, 440).</li>
+        <li>Even amounts are standard for happy occasions. Odd amounts are traditionally for funerals, in white envelopes.</li>
+        <li>Wedding gifts should at least cover your seat at the banquet.</li>
+        <li>Businesses often hand out 开工利是 (start-of-work red envelopes) on the first working day after New Year.</li>
+      </ul>
+    </article>
+  </div>
+  <aside class="sidebar">{% include sidebar.html %}</aside>
+</div></section>
+{% include related.html %}

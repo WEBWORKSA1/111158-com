@@ -1,0 +1,34 @@
+---
+layout: default
+title: "Lucky Launch Date Picker: Best Dates to Open, Sign or Launch"
+description: "Find the 10 most auspicious dates in any range to open a store, launch a product, sign a contract, move or marry, and export them to your calendar."
+app: true
+---
+<div class="wrap crumbs" style="padding-top:12px"><a href="./">Home</a> › Tools › Launch Date Picker</div>
+<section class="page-hero"><div class="wrap">
+  <span class="eyebrow">Free tool</span>
+  <h1>Lucky Launch Date Picker</h1>
+  <p class="lead">Grand openings on the 8th, 18th or 28th, and on double dates like 8/8, draw crowds and good press. Pick a range and we'll rank the best days for your type of event.</p>
+</div></section>
+<section class="block" style="padding-top:20px"><div class="wrap two-col">
+  <div>
+    <div class="tool">
+      <form id="dateForm">
+        <div class="field"><label for="dType">What are you planning?</label>
+          <select id="dType"><option value="retail">Store / restaurant grand opening</option><option value="online">Product or website launch</option><option value="signing">Contract signing / deal closing</option><option value="corporate">Company registration / corporate event</option><option value="wedding">Wedding / engagement</option><option value="moving">Moving home or office</option></select></div>
+        <div class="row2"><div class="field"><label for="dStart">From</label><input id="dStart" type="date" required></div><div class="field"><label for="dEnd">To</label><input id="dEnd" type="date" required></div></div>
+        <button class="btn btn-primary btn-block" type="submit">Find my best dates</button>
+      </form>
+      <div id="dateOut" class="result" aria-live="polite"></div>
+      <p class="disclaimer">Scoring uses number symbolism (8, 6, 9 favoured; 4 avoided), double dates and weekday fit for your event type. For traditional almanac (通胜 / 黄历) selection with your birth data, request a personalised reading.</p>
+    </div>
+    {% include ad.html %}
+    <article class="prose">
+      <h2>How businesses choose launch dates</h2>
+      <p>Choosing an auspicious date (<span class="zh">择日</span>, <i>zé rì</i>) is a long-standing practice for openings, weddings and moves. Numerically, days with 8 are favoured for prosperity and 6 or 9 for smooth, lasting results. Days with 4 are avoided. The most famous example is the Beijing 2008 Olympics, which opened on <b>8/8/08 at 8:08:08 pm</b>.</p>
+      <p>Retail openings do best on Fridays and Saturdays, when foot traffic peaks. Deal signings and corporate events suit mid-week. Weddings suit weekends.</p>
+    </article>
+  </div>
+  <aside class="sidebar">{% include sidebar.html %}</aside>
+</div></section>
+{% include related.html %}
