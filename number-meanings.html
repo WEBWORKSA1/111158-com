@@ -1,0 +1,26 @@
+---
+layout: default
+title: "Chinese Number Meanings Library: 0–9 and 45+ Combinations"
+description: "Searchable library of Chinese number meanings: digits 0–9 and 45+ combinations such as 168, 518, 520, 1314, 8888 and 111158, with homophones and lucky or avoid verdicts."
+---
+<div class="wrap crumbs" style="padding-top:12px"><a href="./">Home</a> › Learn › Number Meanings</div>
+<section class="page-hero"><div class="wrap">
+  <span class="eyebrow">Reference library</span>
+  <h1>Chinese Number Meanings</h1>
+  <p class="lead">Every digit and the combinations people actually use in prices, phone numbers, dates and online slang. Search, filter, then analyze any number.</p>
+  <div class="tool mt2">
+    <div class="field"><label for="libSearch">Search numbers or meanings</label><input id="libSearch" placeholder="Try 8, love, prosper, avoid…"></div>
+    <div class="chips"><button class="chip active" data-cat="all">All</button><button class="chip" data-cat="digit">Digits 0–9</button><button class="chip" data-cat="wealth">Wealth</button><button class="chip" data-cat="luck">Luck</button><button class="chip" data-cat="love">Love</button><button class="chip" data-cat="culture">Culture & slang</button><button class="chip" data-cat="avoid">Avoid</button></div>
+  </div>
+</div></section>
+<section class="block" style="padding-top:20px"><div class="wrap">
+  <div class="grid g3">
+{% for x in site.data.numbers %}<div class="card num-card" data-lib="{{ x.c }}"><div class="n">{{ x.n }}</div><div><b class="zh">{{ x.zh }}</b> <span class="pill v-{{ x.v }}">{% if x.v == "good" %}Lucky{% elsif x.v == "bad" %}Avoid{% else %}Mixed{% endif %}</span><p class="muted mt0" style="margin:4px 0 6px">{{ x.m }}</p><a class="small" href="number-analyzer.html?n={{ x.n }}">Analyze →</a></div></div>
+{% endfor %}  </div>
+  {% include ad.html %}
+  <div class="prose" style="margin:0 auto">
+    <h2>Notes on dialects</h2>
+    <p>Meanings are based on Mandarin, with Cantonese favourites noted. In Cantonese, <b>3</b> sounds like 生 (life) and <b>28</b> like 易发 (easy prosperity). Teochew speakers may regard <b>4</b> positively. Always consider your audience's region.</p>
+  </div>
+</div></section>
+{% include related.html %}
